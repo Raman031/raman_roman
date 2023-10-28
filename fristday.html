@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: orchid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .div{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            border-radius: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .div1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        h2{
+            font-size: 20px;
+        }
+        div{
+            /*width:100%;
+            height:100% */
+            targin:10%;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <div>
+        <div class="div">
+            <div class="div1">
+                <h2>centimeter to inches converter</h2>
+                <input type="text" id="enter the num">
+
+                <h3 id="output"></h3>
+                <button id="click" onclick="display()">click to convert</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function display(){
+            let i= document.getElementById("enter the num").value;
+            let j= 1/2.54;
+            document.getElementById("output").innerHTML=j;
+        }
+                                                      
+    </script>
+    
+    
+
+    
+</body>
+</html>
